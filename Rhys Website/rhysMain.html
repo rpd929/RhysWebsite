@@ -4,35 +4,49 @@
 	<title>Rhys Peters PT</title>
 	<link rel = "stylesheet" href ="rhysMain.css">
 
+	<script type="text/javascript">
+		
+		var counter = 0;
+		clearInterval(carousel);
+		counterSchedule = setInterval(carousel, 4000);
+		var slideIndex = 0;
+		
+		
+		
+
+		function carousel() {
+	   	var currentImage = document.getElementById('currentSlide');
+	    var nextSlide = "slide" + (slideIndex + 1) + '.jpg';
+	 	currentImage.src = nextSlide;
+	    slideIndex++;
+
+	    if(slideIndex == 4)
+	    {
+	    	slideIndex = 0;
+	    }
+	   
+	   }
+
+	</script>
+
 	
 </head>
 <body>
-	<table id="mainTable">
-	<div id= "menuDiv">
-		<button id="dropButton"> Navigation </button>
-
-		<div id="dropDownDiv">
-
-
-			<a href="#"> 
-				Services
-			</a>
-
-			
-			<a href="#"> 
-				Pricing
-			</a>
-
-			
-			<a href="#"> 
-				Book Apointment
-			</a>
-
-			
-			<a href="#"> 
-				Login
-			</a>
+	
+		<div class="dropdown">
+  			
+  			<button class="dropbtn">Navigation</button>
+  		
+  			<div class="dropdown-content">
+	    		<a href="pricing.html">Services/Pricing</a>
+	    		<a href="#">Book a Session</a>
+	    		<a href="#">Login</a>
+  			</div>
 		</div>
+
+
+		<table id="mainTable">
+
 
 
 		<span id="logoSpan">
@@ -41,13 +55,16 @@
 
 		</span>
 	
-	</div>
+
 
 		<br />
 		<hr />
 
 
 	<div id="mainPhotoDiv">
+
+		<img id="currentSlide" src = "slide1.jpg">
+		
 		
 	</div>
 		

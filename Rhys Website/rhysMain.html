@@ -29,71 +29,87 @@
 
 	</script>
 
+	<script type="text/javascript">
+		
+		function home()
+		{
+			window.location.href="/rhysMain.html";
+			
+		}
+	</script>
+
 	
 </head>
 <body>
-	
-		<div class="dropdown">
-  			
-  			<button class="dropbtn">Navigation</button>
-  		
-  			<div class="dropdown-content">
-	    		<a href="pricing.html">Services/Pricing</a>
-	    		<a href="#">Book a Session</a>
-	    		<a href="#">Login</a>
-  			</div>
-		</div>
-
-
-		<table id="mainTable">
-
-
-
-		<span id="logoSpan">
+		<table width="100%">
+			<tr>
+				<td>
 			
-			<img src="genericLogo.png" id="logo" >
+				<div class="dropdown" align="left">
+		  			
+		  			<button class="dropbtn">Navigation</button>
+		  		
+		  			<div class="dropdown-content">
+			    		<a href="pricing.html">Services/Pricing</a>
+			    		<a href="booking.html">Book a Session</a>
+			    		<a href="#">Login</a>
+		  			</div>
+				</div>
+			</td>
+			<td>
+				<div>
+						<img src="genericLogo.png" id="logo" align="left" onclick="home()">
+				
+				</div>
+			</td>
+		</tr>
+	</table>
 
-		</span>
-	
+			
 
-
-		<br />
-		<hr />
-
-
-	<div id="mainPhotoDiv">
-
-		<img id="currentSlide" src = "slide1.jpg">
+	<table id="mainTable">
 		
+		
+
+		<tr>
+			<td width="100%">
+				<div id="mainPhotoDiv" align="center">
+
+					<img id="currentSlide" align="center" src = "slide1.jpg">
+		
+		
+				</div>
+			</td>
+		</tr>
+
+		
+		
+		<tr>
+			<td>
+				<div id="aboutMe"> 
+		
+					<p>
+						<h3 id="aboutMeHeading"> About me </h3>
+						
+						<span id="aboutMeText" >
+						
+						" From a young age, I have been involved as both a participant and coach in sports of all types. I still enjoy playing both rugby and various other athletic events in my own time and really believe in a philosphy of developing a healthy lifestyle around excerice, rather than it being a chore. 
+
+						<br />
+
+
+						I founded "company name" 4 years ago with the mission to help people create their own healthy lifestyles, through a combination of exercise, diet and recovery, I strive to serve my clients in all aspects of improving their physical health. "
+						
+						</span>
+					</p>
 		
 	</div>
-		
-		<br />
-		<hr />
-
-	<div id="aboutMe"> 
-		
-			<p>
-				<h3 id="aboutMeHeading"> About me </h3>
-				
-				<span id="aboutMeText" >
-				
-				" From a young age, I have been involved as both a participant and coach in sports of all types. I still enjoy playing both rugby and various other athletic events in my own time and really believe in a philosphy of developing a healthy lifestyle around excerice, rather than it being a chore. 
-
-				<br />
-
-
-				I founded "company name" 4 years ago with the mission to help people create their own healthy lifestyles, through a combination of exercise, diet and recovery, I strive to serve my clients in all aspects of improving their physical health. "
-				
-				</span>
-			</p>
-		
-	</div>
+			</td>
+		</tr>
 			
-	<br />
-	<hr />
 
-		
+	<tr>
+		<td>
 	<div id="contactInfoDiv">
 		<ul id="contactInfoList">
 			
@@ -105,7 +121,10 @@
 		
 
 	</div>
+</td>
+</tr>
 </table>
 
 </body>
 </html>
+

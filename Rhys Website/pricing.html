@@ -4,6 +4,15 @@
 	<title>Services</title>
 	<link rel = "stylesheet" href ="rhysMain.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<script type="text/javascript">
+		
+		function home()
+		{
+			window.location.href="/rhysMain.html";
+			
+		}
+	</script>
+
 </head>
 <body>
  	<div class="dropdown">
@@ -11,17 +20,16 @@
   			<button class="dropbtn">Navigation</button>
   		
   			<div class="dropdown-content">
-	    		<a href="#">Services/Pricing</a>
-	    		<a href="#">Book a Session</a>
-	    		<a href="#">Login</a>
+	    		<a href="pricing.html">Services/Pricing</a>
+			    <a href="booking.html">Book a Session</a>
+			    <a href="#">Login</a>
   			</div>
 		</div>
 
 
 		<span id="logoSpan">
 			
-			<img src="genericLogo.png" id="logo" >
-
+			<img src="genericLogo.png" id="logo" align="right" onclick="home()">
 		</span>
 
 		<br />

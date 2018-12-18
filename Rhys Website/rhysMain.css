@@ -1,5 +1,7 @@
 
 
+
+
 /* This section is all navigation menu styling */
 
 			/* Dropdown Button */
@@ -9,12 +11,15 @@
 		  padding: 16px;
 		  font-size: 16px;
 		  border: none;
+		  float: left;
+
 		}
 
 		/* The container <div> - needed to position the dropdown content */
 		.dropdown {
 		  position: relative;
 		  display: inline-block;
+		  align-content: left;
 		}
 
 		/* Dropdown Content (Hidden by Default) */
@@ -25,6 +30,8 @@
 		  min-width: 160px;
 		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		  z-index: 1;
+		  width: 50%;
+		  align-content: left;
 		}
 
 		/* Links inside the dropdown */
@@ -44,7 +51,20 @@
 		/* Change the background color of the dropdown button when the dropdown content is shown */
 		.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-		
+/* Start of the table holding the remaining content */
+	#mainTable{
+
+		align-content: center;
+	}
+
+	#mainTable td {
+
+		width: 100%;
+
+	}
+
+
+
 /* Logo Styling Information */
 	#logo {
 		width: 50px;
@@ -52,13 +72,15 @@
 		
 	}
 	#logoSpan {
-		padding-left: 250px;
+		
+		display: inline-block;
+
 	}
 
 /* Slideshow Styling contained here */		
 
 		#mainPhotoDiv img {
-			
+			width: 100%;
 			height: 400px; /* You must set a specified height */
   			background-position: center; /* Center the image */
   			background-repeat: no-repeat; /* Do not repeat the image */
@@ -123,7 +145,7 @@
 /* Services table styling begins here */
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,400italic,600,700,600italic,700italic);
 
-// demo
+/* demo */
 body {
     font-family: "Josefin Sans", sans-serif;
     line-height: 1;
@@ -137,12 +159,12 @@ body {
     margin-bottom: 50px;
 }
 
-// variables
+/* variables */
 $icon-size: 3rem;
 $icon-color: #D8D8D8;
 $main-color: #F85E6A;
 
-// Pricing table
+/* Pricing table */
 .pricing-table {
     display: table;
     width: 100%;
@@ -242,7 +264,7 @@ $main-color: #F85E6A;
 }
 
 
-// Responsive
+/* Responsive */
 @media screen and (max-width: 600px) {
     .pricing-table {
         .pricing-option {
@@ -255,7 +277,10 @@ $main-color: #F85E6A;
     }
 }
 
-		
+
+
+/* Start of booking page layout */
+
 
 
 	

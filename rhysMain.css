@@ -1,0 +1,253 @@
+/* This section is the general theme styling */
+body{
+
+    font-family: Helvetica;
+}
+
+/* This section is all navigation menu styling */
+
+			/* Dropdown Button */
+		.dropbtn {
+		  background-color: #5abcd8;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  float: left;
+
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		  align-content: left;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		  width: 50%;
+		  align-content: left;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Start of the table holding the remaining content */
+	#mainTable{
+
+		align-content: center;
+	}
+
+	#mainTable td {
+
+		width: 100%;
+
+	}
+
+
+
+/* Logo Styling Information */
+	#logo {
+		width: 50px;
+		height: 50px;
+        
+      
+
+		
+	}
+	
+
+    #logoData {
+
+        text-align: left;
+    }
+
+/* Slideshow Styling contained here */		
+
+		#mainPhotoDiv img {
+			width: 100%;
+			height: 400px; /* You must set a specified height */
+  			background-position: center; /* Center the image */
+  			background-repeat: no-repeat; /* Do not repeat the image */
+ 			background-size: cover; /* Resize the background image to cover the entire container */
+		}
+		
+/* About me/ Mission Statement Section */
+		#aboutMeHeading {
+			text-align: center;
+			font-size: 20pt;
+			font-weight: bold;
+		}
+		#aboutMe {
+			font-size: 15pt;
+			padding: 25px 50px 50px 50px;
+			font-family: Helvetica;
+			font-style: italic;
+			background-color: #e7f6fd;
+            padding-left: 75px;
+            padding-right: 75px;
+            
+
+		} 
+
+        #missionStatementHeading {
+
+            text-align: center;
+            font-size: 20pt;
+            font-weight: bold;
+
+        }
+
+
+
+		
+
+
+		#contactInfoDiv {
+			background-color: #5abcd8;
+			height: 75px;
+			padding: 0px 50px 50px 50px;
+            position: unset;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+           
+
+		}
+
+
+	#contactInfoList {
+		text-align: center;
+		list-style-type: none;
+		font-weight: bold;
+
+	}
+	
+/* Styling for the pricing document
+	
+
+	Styling for the information paragraph */
+
+	#servicesHeading{
+
+		font-family: Helvetica;
+		text-align: center;
+	}
+
+	#servicesParagraph {
+
+		font-family: Helvetica;
+		font-style: italic;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 1.5;
+
+
+	}
+
+
+/* Services table styling begins here */
+#servicesTable {
+
+    
+     border-color: lightblue;
+
+    
+}
+.priceDescriptionsTD {
+
+    list-style: none;
+    padding-right: 25px;
+    font-size: 8pt;
+    opacity: 0.6;
+    text-align: center;
+    border-color: lightblue;
+   
+
+}
+
+.priceDescriptionsTD:hover {
+
+    opacity: 0.99;
+
+}
+
+.servicePriceUL {
+
+    list-style: none;
+    text-align: left;
+
+}
+
+.servicePrice {
+    text-align: center;
+    font-weight: bold;
+}
+
+#casualHeading {
+    color: #1ca3ec;
+
+}
+
+#groupHeading {
+    color: #2389da;
+
+}
+
+#membershipHeading {
+    color: #0f5e9c;
+
+}
+
+
+/* End of service Pricing section */
+
+/*Start of the login page section */
+
+#passwordInput {
+
+    width: 100px;
+}
+
+#usernameInput {
+
+    width: 95px;
+}
+
+#loginDiv {
+
+    background-color: #0f5e9c;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    height: 125px;
+}
+
+.loginButton {
+    width: 50px;
+}
+
+
+

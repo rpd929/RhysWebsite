@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changing Pace Login</title>
+	<link rel = "stylesheet" href ="rhysMain.css">
+	<script type="text/javascript">
+    
+        function home()
+        {
+          window.location.href="/rhysMain.html";
+          
+        }
+      </script>
+</head>
+<body>
+<table width="100%">
+		
+			<th align="left" width="50%">
+			
+				<div class="dropdown" align="left">
+		  			
+		  			<button class="dropbtn">Navigation</button>
+		  		
+		  			<div class="dropdown-content">
+			    		<a href="pricing.html">Services/Pricing</a>
+			    		<a href="booking.html">Book a Session</a>
+			    		<a href="loginPage.html">Login</a>
+		  			</div>
+			
+		  		</div>
+		  	</th>
+		  	<th align="left">
+			
+						<img src="genericLogo.png" id="logo"
+						onclick="home()">
+				
+				
+			</th>
+		
+	</table>
+
+<hr />
+
+	<div id="loginDiv">
+	<form action = "http://changingpace.com/login" method="post">
+		<h2>Login</h2>
+			Username: 
+			<input id="usernameInput" type='text' name="username">
+			<br />
+			<br />
+			Password:
+			<input id ='passwordInput' type="Password" name="pw">
+			<br />
+			<br />
+			<input type="submit" class="loginButton" value="Submit"/> 
+			<input type="reset" class="loginButton" name="Reset Form">
+	</form>
+
+
+</div>
+<br />
+<br />
+	<div id="contactInfoDiv">
+		<ul id="contactInfoList">
+			
+			<li> <ins> Contact Me </ins> </li>
+			<li> <br /></li>
+			<li></li>
+			<li>Phone: 0400000000</li>
+			<li>Email: Rhys@hotmail.com </li>
+		</ul>
+		
+
+	</div>
+</body>
+</html>

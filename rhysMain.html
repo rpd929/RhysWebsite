@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rhys Peters PT</title>
+	<link rel = "stylesheet" href ="rhysMain.css">
+
+	<script type="text/javascript">
+		
+		var counter = 0;
+		clearInterval(carousel);
+		counterSchedule = setInterval(carousel, 4000);
+		var slideIndex = 0;
+		
+		
+		
+
+		function carousel() {
+	   	var currentImage = document.getElementById('currentSlide');
+	    var nextSlide = "slide" + (slideIndex + 1) + '.jpg';
+	 	currentImage.src = nextSlide;
+	    slideIndex++;
+
+	    if(slideIndex == 4)
+	    {
+	    	slideIndex = 0;
+	    }
+	   
+	   }
+
+	</script>
+
+	<script type="text/javascript">
+		
+		function home()
+		{
+			window.location.href="/rhysMain.html";
+			
+		}
+	</script>
+
+	
+</head>
+<body>
+		<table width="100%">
+		
+			<th align="left" width="50%">
+			
+				<div class="dropdown" align="left">
+		  			
+		  			<button class="dropbtn">Navigation</button>
+		  		
+		  			<div class="dropdown-content">
+			    		<a href="pricing.html">Services/Pricing</a>
+			    		<a href="booking.html">Book a Session</a>
+			    		 <a href="loginPage.html">Login</a>
+		  			</div>
+			
+		  		</div>
+		  	</th>
+		  	<th align="left">
+			
+						<img src="genericLogo.png" id="logo"
+						onclick="home()">
+				
+				
+			</th>
+		
+	</table>
+
+<hr />
+			
+
+	<table id="mainTable">
+		
+		
+
+		<tr>
+			<td width="100%">
+				<div id="mainPhotoDiv" align="center">
+
+					<img id="currentSlide" align="center" src = "slide1.jpg">
+		
+		
+				</div>
+			</td>
+		</tr>
+
+		
+		
+		<tr>
+			<td>
+				<hr />
+				<div id="aboutMe"> 
+		
+					<p>
+
+
+						<span id="missionStatement">
+						<h3 id="missionStatementHeading">Mission Statement</h3>
+						I founded Changing Pace 1 years ago with the mission to help people create their own healthy lifestyles, through a combination of exercise, diet and recovery, I strive to serve my clients in all aspects of improving their physical health. "
+						
+						</span>
+
+
+						<br />
+						<br />
+
+					<h3 id="aboutMeHeading"> About me </h3>
+						
+						<span id="aboutMeText" >
+						
+							From a young age, I have been involved as both a participant and coach in sports of all types. I still enjoy playing both rugby and various other athletic events in my own time and really believe in a philosphy of developing a healthy lifestyle around excerice, rather than it being a chore. 
+						</span>
+					</p>
+		
+	</div>
+			</td>
+		</tr>
+			
+
+	<tr>
+
+		<td>
+			<hr />
+	<div id="contactInfoDiv">
+		<ul id="contactInfoList">
+			
+			<lh> <ins> Contact Me </ins> </lh>
+			<li> <br /></li>
+			<li></li>
+			<li>Phone: 0400000000</li>
+			<li>Email: Rhys@hotmail.com </li>
+		</ul>
+		
+
+	</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

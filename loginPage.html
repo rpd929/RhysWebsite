@@ -10,7 +10,50 @@
           window.location.href="/rhysMain.html";
           
         }
+     
+     </script>
+
+     <script type="text/javascript" src="/Authentication/authenticate.js"> 
+
+     </script>
+
+
+      <script type="text/javascript"  src="/Authentication/sha256.js"> 
+
       </script>
+      	
+      <script type="text/javascript">
+
+      	function hashPw()
+      	{
+      		var obj = document.getElementById('passwordInput');
+
+      		var pw = createHash(obj.value);
+
+      		getFile(pw);
+
+
+      	}
+
+
+      	function createHash(result)
+		{
+
+			var shaObj256 = new jsSHA("SHA-256", "TEXT");
+			
+			shaObj256.update(result);
+
+			var hash2 = shaObj256.getHash("HEX");
+
+			return hash2;
+
+		}
+      	
+
+      </script>
+
+
+
 </head>
 <body>
 <table width="100%">
@@ -42,7 +85,7 @@
 <hr />
 
 	<div id="loginDiv">
-	<form action = "http://changingpace.com/login" method="post">
+	
 		<h2>Login</h2>
 			Username: 
 			<input id="usernameInput" type='text' name="username">
@@ -52,9 +95,9 @@
 			<input id ='passwordInput' type="Password" name="pw">
 			<br />
 			<br />
-			<input type="submit" class="loginButton" value="Submit"/> 
-			<input type="reset" class="loginButton" name="Reset Form">
-	</form>
+			<button onclick="hashPw()"> Submit </button> 
+		
+			
 
 
 </div>

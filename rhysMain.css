@@ -2,6 +2,7 @@
 body{
 
     font-family: Helvetica;
+    background-color: #292b2d;
 }
 
 /* This section is all navigation menu styling */
@@ -109,9 +110,8 @@ body{
 			font-family: Helvetica;
 			font-style: italic;
 			background-color: #e7f6fd;
-            padding-left: 75px;
-            padding-right: 75px;
-            width: 75%;
+            width: 85%;
+
             
 
 		} 
@@ -135,8 +135,8 @@ body{
 			padding: 0px 50px 50px 50px;
             position: unset;
             bottom: 0;
-            width: 80%;
             text-align: center;
+           
            
 
 		}
@@ -146,7 +146,7 @@ body{
 		text-align: center;
 		list-style-type: none;
 		font-weight: bold;
-
+		
 	}
 	
 /* Styling for the pricing document
@@ -171,6 +171,11 @@ body{
 
 	}
 
+	#priceTitle {
+
+		color: white;
+	}
+
 
 /* Services table styling begins here */
 #servicesTable {
@@ -180,6 +185,16 @@ body{
 
     
 }
+#servicesHeading {
+	color: white;
+}
+
+#servicesParagraph {
+
+	color: white;
+}
+
+
 .priceDescriptionsTD {
 
     list-style: none;
@@ -188,6 +203,7 @@ body{
     opacity: 0.6;
     text-align: center;
     border-color: lightblue;
+    color: white;
    
 
 }
@@ -203,25 +219,31 @@ body{
     list-style: none;
     text-align: left;
 
+
 }
 
 .servicePrice {
     text-align: center;
     font-weight: bold;
+    color: white;
 }
 
 #casualHeading {
     color: #1ca3ec;
+    font-size: 15pt;
 
 }
 
 #groupHeading {
     color: #2389da;
+     font-size: 15pt;
 
 }
 
 #membershipHeading {
     color: #0f5e9c;
+     font-size: 15pt;
+
 
 }
 

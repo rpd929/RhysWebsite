@@ -1,6 +1,8 @@
 
 /*Getting the data from the txt file that we are checking against */
-	function getFile(hashedPw)
+var textArray;
+
+function getFile(hashedPw)
 	{
 			var rawFile = new XMLHttpRequest();
 	    	rawFile.open("GET", "/Authentication/pw.txt", true);
@@ -11,78 +13,55 @@
 	            if(rawFile.status === 200 || rawFile.status == 0)
 	            {
 	                var allText = rawFile.responseText;
-	                var loginCombo = allText.split('//');
-	     
+	               	var array = allText.split('//');
+	               
+	               	UserCheck(array, hashedPw);
 	              
-	                	var userArray = loginCombo[0].split('---');
-	               		var username = userArray[0].trim();
-	               		var pw = userArray[1];
-
-	               		var user = {
-
-	               			un: '',
-	               			pww: '',
-	               		};
-
-
-	               		user.un = username;
-	               		user.pww = pw;
-
-
-	               		
-	             
-	               		
-	               		UserCheck(user, hashedPw);
-	               	}
 	               
 	            }
 	        }
-	    
+	    }
 	    rawFile.send(null);
 
 	}
 
 
-
-	
-		
-		function UserCheck(user, hashedPw)
+	function UserCheck(array, hashedPw)
 		{
-			var UnameEntry = document.getElementById('usernameInput').value.trim();
+			for(var x = 0; x < array.length; x++)
+			{
+				var userX = array[x].split('---');
 
-			var certUser = user.un;
-			var userPw = user.pww.trim();
-			hashedPw = hashedPw.trim();
+				var xPassword = userX[1].trim();
 
+				var xUsername = userX[0].trim();
+			
+				var UnameEntry = document.getElementById('usernameInput').value.trim();
 
 			
-			
-			if(certUser.localeCompare(certUser) == 0 && userPw.localeCompare(hashedPw) == 0)
-				{
-
-					alert('its done');
-
-				} else {
 					
-					console.log(userPw + ' ' + hashedPw);
+				
+				if(UnameEntry == xUsername && xPassword == hashedPw) 
+				{
+					changePage();
+					return;
+				}
+				else 
+				{
+					
+					
 				}
 			}
-				
-		
-		
 
-		function createHash(result)
-		{
-
-			var shaObj256 = new jsSHA("SHA-256", "TEXT");
+			alert('Incorrect Username or Password')
 			
-			shaObj256.update(result);
-
-			var hash2 = shaObj256.getHash("HEX");
-
-			return hash2;
-
 		}
 
+	function changePage()
+	{
+		document.location.href = "/Authentication/exCont.html";
+	}
+
+			
 
 	

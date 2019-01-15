@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html!>
 <html>
 <head>
 	<title>Changing Pace Login</title>
@@ -17,10 +17,16 @@
 
      </script>
 
+     <script type="text/javascript" src="/Authentication/exCont.html"> 
+
+     </script>
 
       <script type="text/javascript"  src="/Authentication/sha256.js"> 
 
+
+
       </script>
+      <script type="text/javascript" src="/"></script>
       	
       <script type="text/javascript">
 
@@ -43,7 +49,7 @@
 			
 			shaObj256.update(result);
 
-			var hash2 = shaObj256.getHash("HEX");
+			var hash2 = shaObj256.getHash("HEX").trim();
 
 			return hash2;
 
